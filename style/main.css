@@ -1,0 +1,73 @@
+body {
+	color: #53545a;
+	font-weight: 700;
+	font-family: sans-serif;
+}
+
+h2 {
+	margin-left: 40px;
+	border-bottom: 1px solid #b5b5b5;
+	padding: 15px;
+	color: #0ab8a2;
+}
+
+p {
+	display: inline-block;
+	width: 350px;
+	margin: 0 0 0 20px;
+	position: relative;
+	bottom: 20px;
+	border-bottom: 1px solid #e5e2e2;
+	padding-bottom: 20px;
+}
+
+a {
+	text-decoration: none;
+	color: #53545a;
+}
+
+li {
+	list-style-type: none;
+}
+
+img {
+	border-radius: 50%;
+	border: 1px solid #53545a;
+	width: 50px;
+	opacity: .7;
+}
+
+a.person {
+	font-size: 16px;
+	-webkit-transition: font-size .5s, color .5s;
+	-moz-transition: font-size .5s, color .5s;
+	-o-transition: font-size .5s, color .5s;
+	transition: font-size .5s, color .5s;
+}
+
+a.person.selected {
+	color: #0ab8a2;
+	font-size: 20px;
+}
+
+.friends p {
+	border: none;
+	margin: 20px 0 0 40px;
+}
+
+ul.dropdown, ul.friends {
+	-webkit-transition: max-height .7s;
+	-moz-transition: max-height .7s;
+	-o-transition: max-height .7s;
+	transition: max-height .7s;
+    max-height: 0;
+    overflow: hidden;
+}
+
+ul.dropdown.active, ul.friends.active {
+    max-height: 1500px;
+}
+
+ul.friends {
+	margin-left: 20px;
+}
